@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="survey-form">
+        <h1 id="survey-form-heading">survey form</h1>
+        <div class="form-group">
+            <div>
+                <label id="name-label">Name</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div>
+                <label id="age-label">Age</label>
+                <input type="number" min="16" max="65" placeholder="19" id="age">
+            </div>
+            <div>
+                <label id="gender">Gender:</label>
+                <span>
+                    <input type="radio" name="gender" id="male"> Male
+                    <input type="radio" name="gender" id="female"> Female
+                </span>
+            </div>
+            <div>
+                <label>DOB</label>
+                <input type="date" id="birthday">
+            </div>
+
+            <div>
+                <label style="text-transform:none;">I am a</label>
+                <select id="dropdown">
+                    <option>Coder</option>
+                    <option>Gamer</option>
+                </select>
+            </div>
+            <div>
+                <label id="email-label">Email:</label>
+                <input type="email" placeholder=" abc@xyz.com" id="email" required>
+            </div>
+            <div>
+                <label>Hobbies:</label>
+                <span>
+                    <input type="checkbox" id="coding" />
+                    <label>Coding</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="games" />
+                    <label>Games</label>
+                </span>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
